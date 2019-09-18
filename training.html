@@ -141,7 +141,47 @@
         <div>내용</div>
         <!-- 인라인형 -->
         <span>내용</span>
+        <!-- form 양식지 -->
+        <form>
+            <!-- text, password, radio, checkbox -->
+            <input type="text" placeholder="아이디를 입력해주세요" value="" />
+            <input type="password" placeholder="암호를 입력해주세요" value="" />
+            <input type="radio" name="bt1" value="1" />
+            <input type="radio" name="bt1" value="2" />
+            <input type="radio" name="bt1" value="3" />
+            <!-- 같은 정보의 라디오 버튼의 이름은 같아야 함-->
+            <input type="radio" name="bt2" value="1" />
+            <input type="radio" name="bt2" value="2" />
+            <input type="radio" name="bt2" value="3" />
+            <input type="checkbox" value="1" />
+            <input type="checkbox" value="2" />
+            <input type="checkbox" value="3" />
 
+        <select>
+            <option>사이트 이름</option>
+            <option>네이버</option>
+            <option>구글</option>
+            <option>페이스북</option>
+        </select>
+
+        <!-- cols 열(글자) 갯수, rows 행(줄) 갯수-->
+        <textarea cols="20" rows="3">
+        내용을 입력해주세요
+        </textarea>
+
+        <!-- button 버튼 -->
+        <input type="button" value="버튼이름" />
+        <!-- 기본형 -->
+
+        <button onclick="alert('테스트 완료 (알림창 내용)')">테스트 버튼</button>
+        <!-- 버튼에 알림 삽입, '' 표시 구별 잘하기 -->
+
+        <!-- submit 제출 버튼 -->
+        <input type="submit" value="제출버튼" />
+
+        </form>
+        
+        
         <br />
 
 
@@ -194,6 +234,8 @@
                         <td colspan="3">down</td>
                     </tr>
                 </table>
+
+        <!-- -->
 
     </body>
 </html>

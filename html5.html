@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <!-- div 대체품 -->
+        <header>
+            <!-- 머릿말 -->
+        </header>
+
+        <!-- 본문 -->
+        <div>
+            <nav> <!-- 내비게이션 --> </nav>
+            <section>
+                <h1>본문 제목</h1>
+                <article>기사글</article>
+                <article>기사글</article>
+                <article>기사글</article>
+            </section>
+            <aside> <!-- 광고 --> </aside>
+        </div>
+
+        <footer>
+            <!-- 맺음말 -->
+        </footer>
+
+        <style>
+            #myCanvas{
+                width: 300px;
+                height: 150px;
+                /* 기본 사이즈 300*150 */
+            }
+        </style>
+
+        <canvas id="myCanvas">
+        </canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            /* canvas라는 변수를 만들어서 myCanvas를 담음 */
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000"; //빨간색을 지정합니다.
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+            ctx.fillStyle = "#000000";
+            ctx.beginPath(); //선그리기 시작
+            ctx.moveTo(65, 75); //펜 들어 움직이기
+            ctx.lineTo(90, 95); //선 그으며 움직이기
+            ctx.lineTo(90, 55);
+            ctx.fill(); //내부 채우기
+            ctx.beginPath();
+            ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+            ctx.moveTo(260, 75);
+            ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+            ctx.moveTo(215, 65);
+            ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+            ctx.moveTo(245, 65);
+            ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+            ctx.stroke();
+        </script>
+
+        <!-- audio -->
+        <audio controls> <!-- controls 조작버튼 -->
+            <source src="./media/crowd-cheering.mp3" type="audio/mpeg">
+            <!-- 동일파일이어야 함 -->
+            <!-- 브라우저별 플레이 가능한 파일을 선택하여 재생하도록 함 -->
+        </audio>
+
+        <!-- video -->
+        <video width="320" height="240" controls>
+            <source src="./media/movie.mp4" type="video/mp4">
+        </video>
+
+        <h1><a href="index.html">원래 화면으로 돌아가기</a></h1>
+    </body>
+</html>
