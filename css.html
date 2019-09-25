@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="default.css" />
+        <!-- external 외부에서 css파일을 불러와서 사용하기 -->
+
+        <style>
+            #embeded{
+                color: green;
+                font-size: 30px;
+            }
+            /* 전체 선택자 */
+            *{ }
+            /* 요소 선택자 */
+            b{ color: violet;}
+            div{ font-size: 10px; }
+            /* css 주석 */
+        </style>
+        <!-- html 주석 -->
+    </head>
+    <body>
+        <div id="external"> external 방식 </div>
+        <div id="embeded"> embed 방식 </div>
+        <div id="inline" style="color:yellow;"> inline 방식</div>
+        내용
+        <b> 볼드체 </b>
+
+        <style>
+            /* 클래스 선택자 */
+            .c_name{ color: green; }
+            /* 아이디 선택자 */
+            #i_name{ color: purple; }
+        </style>
+        <div class="c_name"> 클래스 선택자 </div>
+        <div id="i_name"> 아이디 선택자 </div>
+
+        <style>
+            /* 가상 요소 선택자 (요소가 없는 가상으로 요소를 선택)*/
+            #name_a:before{ content: "시작"; }
+            #name_a:after{ content: "끝"; }
+            /* before, after 앞뒤에 글씨 붙이기 */
+            #name_a:first-letter{ font-size: 30px; }
+            /* first-letter 첫글자 크기 */
+            #name_a:first-line{ color: pink; }
+            /* first-line 첫줄 색깔 */
+        </style>
+        <div id="name_a"> 내용내용내용내용내용내용나는짱짱짱 </div>
+
+        <style>
+            /* 가상클래스 선택자 */
+            .li1:first-child{ color: red; }
+            .li1:last-child{ color: blue; }
+            .li1:nth-child(2){ color: green; }
+           /* 1st, 2nd, 3rd, 4th ... nth */
+           /*: link 기본, :visited 방문 후, :hover 마우스 올림,
+           :active 누름, :focus 집중 */
+            a:link{color: black; text-decoration: none; }
+            a:visited{ color: red; }
+            a:hover{ color: blue; font-size: 20px; }
+            a:active{ color: yellow; }
+            a:focue{ color: green; }
+        </style>
+        <ul> <!-- parent, li 태그의 부모 -->
+            <li class="li1"> 리스트1 </li> <!-- child, ul 태그의 자식 -->
+            <li class="li1"> 리스트2 </li>
+            <li class="li1"> 리스트3 </li>
+            <li class="li1"> 리스트4 </li>
+        </ul>
+        <a href="#"> 링크 버튼 </a>
+
+        <style>
+            /* 하위 선택자 */
+            div li{ color: red; }
+            /* 자식 선택자 */
+            div>li{ text-decoration: underline; }
+            /* 선택자 그룹화 */
+            div{ color: red; }
+            #i_1, i_2, i_3 { color: purple; }
+        </style>
+        <div>
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+            </ul>
+        </div>
+        <div id="i_1"> 첫번째 </div>
+        <div id="i_2"> 두번째 </div>
+        <div id="i_3"> 세번째 </div>
+
+      
+        <style type="text/css">
+            .cascade {color:green;}
+            #specifi {color:blue;}
+        </style>
+        <div class="cascade"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi" style="color:red;"> 단계적으로 적용되는 스타일 </div>
+        
+        <style>
+            #color_test{
+                color: blue;
+                color: #000; /* #RGB */
+                color: #000000; /* #RRGGBB, 0~f(16진수) */
+                color: #rgb(0,0,255); /* 0~255 */
+                color: #rgb(0,0,100%); /* 0~100% */
+
+            }
+        </style>
+        <div id="color_test">color_test</div>
+    
+        <style>
+            #box_model, #inline_model {
+                border: solid 1px black; 
+                /* border 경계선, solid 실선, 1px두께 검은색 */
+                width: 200px; /* 가로 길이 */
+                height: 200px; /* 세로 길이 */
+                margin: 100px; /* margin 바깥 여백 */
+                padding: 100px; /* padding 안쪽 여백 */
+                position: static /* 기본 static(정적인, 멈춰있는) */
+                /* static 정적인, relative 관계형, absolute 절대적인, fixed 고정형 */
+                left: 10px;
+                top: 10px;
+            }
+            
+        </style>
+        <div id="box_model"> 박스모델 </div>
+        <span id="inline_model"> 인라인모델 </span>
+
+
+    </body>
+</html>
