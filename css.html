@@ -129,6 +129,102 @@
         <div id="box_model"> 박스모델 </div>
         <span id="inline_model"> 인라인모델 </span>
 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
+        <br /> 
 
+        <style>
+            #font_target{
+                font-family: "KOPUBBATANGMEDIUM", sans-serif;
+                font-size:15px;
+                font-weight:bold;
+                /* light, bold, bolder, 100, 200, 300, 400*/
+                font-style:italic;
+                /* normal 일반, italic 이탤릭, oblique 비스듬한 */ 
+                font-font-variant:small-caps;
+                /* 작은 대문자로 표현 */
+            }
+        </style>
+        폰트 교체하기 font test
+        <div id="font_target"> 폰트 교체하기 font test
+        AbcDEfg 
+        </div>
+        
+        <style>
+            #text_target{
+                text-aligh: center; /* 좌우정렬 */
+                /* left, right, center */
+                width: 150px;
+                vertical-align: top; /* 상하정렬 */
+
+                text-decoration: underline;
+                /* underline, line-through, overline */
+            }
+        </style>
+        <div id="text_target"> 글 정리 방식 </div>
+
+        <style>
+                #line_target{
+                    letter-spacing: 20px; /* 글자 간격 */
+                    line-height: 20px; /* 줄 간격 */
+                    text-indent: 20px; /* 들여쓰기 */
+                    text-transform: uppercase; /* 대소문자 변경 */
+                    /* UPPERCASE, lowercase, Capitalize */
+                    white-space: pre; /*띄어쓰기, 공백 모두 포함*/
+                }
+            </style>
+            <div id="line_target">
+                Abcdefghijklmnop내용내용내용내용내용내용내용
+                내용내용내용내용내용내용내용내용내용내용내용
+                내용내용내용내용내용내용내용내용내용내용내용내용</div>
+
+                <style>
+                        /*
+                            baseline : 기준선에 정렬
+                            top : 위쪽정렬
+                            text-top : 위쪽정렬
+                            middle : 중앙정렬
+                            bottom : 하단정렬
+                            text-bottom : 하단정렬
+                        */
+                        #table_target td{
+                            width:150px;
+                            height:150px;
+                            border:solid 1px black;
+                        }
+                        #vartical_baseline{ vertical-align: baseline; }
+                        #vartical_top{ vertical-align: top; }
+                        #vartical_text_top{ vertical-align: text-top; }
+                        #vartical_middle{ vertical-align: middle; }
+                        #vertical_bottom{ vertical-align: bottom; }
+                        #vertical_text_bottom{ vertical-align: text-bottom; }
+                    </style>
+                    <table id="table_target">
+                        <tr>
+                            <td id="vartical_baseline">top</td>
+                            <td id="vartical_top">top</td>
+                            <td id="vartical_text_top">text_top</td>
+                            <td id="vartical_middle">middle</td>
+                            <td id="vertical_bottom">bottom</td>
+                            <td id="vertical_text_bottom">text_bottom</td>
+                        </tr>
+                    </table>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+            #google_font{
+                font-family: 'Do Hyeon', sans-serif;
+            }
+        </style>
+        <div id="google_font"> google font 구글 폰트 </div>
+        
     </body>
 </html>
