@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout1</title>
+        <meta charset="utf-8" />
+        <style>
+            header, div, nav, footer, ul, li, h1, h2, h3{
+                /*border: solid 1px black; */ /* 경계선 긋기 */
+                /* margin: 10px; */ /* 서로간에 여유공간 만들기 */
+            }
+            header>ul>li{
+                float:left; /* 둥둥 떠다니게 : 왼쪽 기준 */
+                list-style:none; /* 목록-모습(동그라미): 없음 */
+                padding-left: 10px; /* 내부여백-왼쪽 : 10px */
+                padding-right: 10px; /* 내부여백-오른쪽 : 10px */
+                border-right: solid 1px gray; /* 경계선-오른쪽 : 실선 1px 두께 회색 */
+
+            }
+            header>ul>li:nth-child(5){
+                border: none; /* 경계선 : 없음 */
+            }
+            header>h1{
+                margin: 0px; 
+            }
+            header>ul{
+                margin: 13x;
+            }
+            #zoom{
+                margin: 10px;
+            }
+            .clear{
+                clear: both; /* 지우다 : 양쪽 */
+                height: 0px; /* 높이 : 0px */
+                overflow: hidden; /* 넘쳤을 때 : 숨김 */
+            }
+            .float_left{ float: left; }
+            .float_right{ float: right; }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            nav>h2{
+                margin: 9px;
+            }
+            nav>ul{
+                margin: 13px;
+            }
+            nav{
+                background-color: #ddd;
+            }
+            #content>div:nth-child(1){
+                background-color: #98f;
+            }
+            #content>div:nth-child(2){
+                background-color: #5d9;
+            }
+            #content>div:nth-child(3){
+                background-color: #f76;
+            }
+            #content>div:nth-child(4){
+                background-color: #ec5;
+            }
+            .content_part{
+                float:left;
+                width: 480px;
+                margin: 15px;
+            }
+            /* #content>div>section>h3 와 동일 */
+            #content h3{
+                color: white;
+            }
+            #content dt{
+                font-weight: bold; /* 글씨-두께 : 두껍게 */
+            }
+            #content dd{
+                margin: 8px;
+            }
+            #content section{
+                width: 1020px;
+                /* margin-left: 180px; */ /* 고정값 */
+                margin-left: auto; /* 가변값 */
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <img src="images/로고.jpg" />
+                </h1>
+                <ul class="float_left">
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
+                <div id="zoom" class="float_right">
+                    <img src="images/돋보기.jpg" />
+                </div>
+                <div class="clear"></div> <!-- float left 해제 -->
+            </header>
+            <nav>
+                <h2 class="float_left">See Our Works</h2>
+                <ul class="float_right">
+                    <li>Web Design</li>
+                    <li>Icons</li>
+                    <li>Illustlations</li>
+                    <li>Misc</li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
+                <div class="clear"></div> <!-- float left 해제 -->
+            </nav>
+            <div id="content">
+                <div>
+                    <section>
+                        <!-- 파란 박스 부분 -->
+                        <h3>Web Design</h3>
+                        <div class="content_part">
+                            <!-- 왼편 부분 -->
+                            <img src="images/layout1_img1.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <!-- 오른편 부분 -->
+                            <img src="images/layout1_img2.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <!-- 파란 박스 부분 -->
+                        <h3>Web Design</h3>
+                        <div class="content_part">
+                            <!-- 왼편 부분 -->
+                            <img src="images/layout1_img3.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <!-- 오른편 부분 -->
+                            <img src="images/layout1_img4.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <!-- 파란 박스 부분 -->
+                        <h3>Web Design</h3>
+                        <div class="content_part">
+                            <!-- 왼편 부분 -->
+                            <img src="images/layout1_img5.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <!-- 오른편 부분 -->
+                            <img src="images/layout1_img6.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <!-- 파란 박스 부분 -->
+                        <h3>Web Design</h3>
+                        <div class="content_part">
+                            <!-- 왼편 부분 -->
+                            <img src="images/layout1_img7.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <!-- 오른편 부분 -->
+                            <img src="images/layout1_img8.jpg" />
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. 
+                                    Suspendisse sed leo tellus. 
+                                    Praesent nec vehicula ligula, 
+                                    non laoreet ligula. Maecenas 
+                                    at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+            </div>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>
