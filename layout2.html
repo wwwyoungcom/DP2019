@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8">
+        <style>
+            header{
+                background-color: #02918c;
+                color: white;
+            }
+            header>h1>span:nth-child(1){
+                color: white;
+            }
+            header>h1>span:nth-child(2){
+                color: #cfc91d;
+            }
+            /*중간내용 생략시 >아니고 띄어쓰기*/
+            header>nav li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            header ul{
+                margin: 17px 0px
+            }
+           .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }   
+            header>h1{
+                margin: 8px ;
+            }
+            #main_visual{
+                background-image: url("images/layout2_visual.jpg");
+                height: 400px;
+                background-size: 100% auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left"> <!-- div span -->
+                    <span>MY</span><span>POLIO</span>
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MY WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual"></div>
+            <section>content1</section>
+            <section>content2</section>
+        </div>
+    </body>
+</html>
