@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>최가영의 기말고사</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
+			body{
+				font-family: 'Source Serif Pro', cursive;
+			}
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            .clear{
+                clear: both; /* 지우다 : 양쪽 */
+                height: 0px; /* 높이 : 0px */
+                overflow: hidden; /* 넘쳤을 때 : 숨김 */
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 130px;
+                padding-right: 130px;
+            }
+            nav{
+                background-color: #D1B6E1;
+                padding: 0px 0px;
+                color: white;
+            }    
+            nav>ul{
+                padding-left: 22px;
+            }
+            .background{
+                background-image: url("images/테스트사진1.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                bgproperties="fixed";
+            }
+        </style>
+    </head>
+    <body class="background">
+        <header>header 자리</header>
+        <nav>
+            <ul class="float_left">
+                <li>Index</li>
+                <li>Layout 1</li>
+                <li>Layout 2</li>
+                <li>Layout 3</li>
+                <li>My Layout</li>
+                <div class="clear"></div> <!-- float left 해제 -->
+            </ul>
+            <div class="clear"></div> <!-- float left 해제 -->
+        </nav>
+        <img src="" />
+
+        <footer>footer 자리</footer>
+    </body>
+</html>
