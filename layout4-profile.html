@@ -38,7 +38,7 @@
                 padding-left: 22px;
             }
             .background{
-                background-image: url("images/background2.png");
+                background-image: url("images/background4.jpg");
                 background-size:cover;
                 background-repeat: no-repeat;
                 bgproperties="fixed";
@@ -50,11 +50,53 @@
             footer{
                 float: left;
                 color: #D9D4CF;
-                padding-top: 600px;
-                padding-left: 60px;
+                padding-top: 40px;
+                padding-left: 90px;
+                padding-bottom: 60px;
             }
             footer img{
                 width: 27px;
+            }
+            section{
+                text-align: center;
+            }
+            section h3{
+                color: #f59300;
+                font-size: 25px;
+                font-weight: normal
+                margin: 50px 0px;
+            }
+            section p{
+                margin: 50px 100px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 200px; /* 고정값 */
+                width: calc(25% - (1px / 4 * 3) - 30px - 30px);
+
+                list-style: none;
+                padding: 30px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            section #about_list{
+                padding: 0px;
+                margin: 0px 50px;
+            }
+            section dd{
+                margin: 0px;
+            }
+            .heize_profile1 img{
+                width: 290px;
+                height: 500px;
+            }
+            .heize_profile2 img{
+                width: 290px;
+                height: 500px;
+            }
+            .heize_profile3 img{
+                width: 290px;
             }
         </style>
     </head>
@@ -66,15 +108,55 @@
                 <li><a href="layout4.html">Main</a></li>
                 <li><a href="layout4-profile.html">Profile</a></li>
                 <li><a href="layout4-album.html">Album</a></li>
-                <li><a href="layout4-photo.html">Photo</a></li>
+                <li><a href="layout4-photo.html">Media</a></li>
                 <div class="clear"></div> <!-- float left 해제 -->
             </ul>
             <div class="clear"></div> <!-- float left 해제 -->
         </nav>
         <div class="clear"></div>
-        <div style="background-color:white; margin:20px; padding:20px; opacity: 70%;">
-        <img src="" />
+        <div style="background-color:#f4f1ee; margin-top: 20px; margin-left: 80px; margin-right: 80px; padding:20px; opacity: 100%;">
+        <section>
+            <h3>Heize's Profile</h3>
+            <ul id="about_list">
+                <li class=heize_profile1>
+                    <image src="images/heize_profile1.jpg" />
+                </li>
+                <li class=heize_profile3>
+                    <image src="images/profile.png" />
+                    <dl>
+                        <dd>
+                            <br />
+                            <b>이름</b> 헤이즈 (Heize) <br /><br />
+                            <b>본명</b> 장다혜 (張多蕙) <br /><br />
+                            <b>출생</b> 1991년 8월 9일 (28세) 대구광역시 <br /><br />
+                            <b>신체</b> 166cm, O형 <br /><br />
+                            <b>가족</b> 부모님, 오빠, 반려견 밤비 <br /><br />
+                            <b>데뷔</b> 2014년 싱글 앨범 '조금만 더 방황하고' <br /><br />
+                            <b>소속</b> Studio Blu
+                        </dd>
+                    </dl> 
+                </li>
+                <li class=heize_profile3>
+                    <image src="images/awards.png" />
+                    <dl>
+                        <dd>
+                            <b>2018년</b> <br /><br />
+                            제 7회 가온차트 뮤직 어워드 올해의 발견상 R&B 부문 <br /><br />
+                            제 13회 숨피어워즈 베스트 힙합 알엔비 아티스트 <br /><br />
+                            엠넷 아시안 뮤직 어워드 베스트 보컬 퍼포먼스 솔로 <br /><br />
+                            <b>2019년</b> <br /><br />
+                            제 14회 멜론 뮤직 어워드 TOP 10 & 뮤직스타일상 R&B/Soul 부문 <br /><br />
+                        </dd>
+                    </dl> 
+                </li>
+                <li class=heize_profile2>
+                    <image src="images/heize_profile2.jpg" /> 
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </section>
 
+        </div>
         <footer>
             <div class="short_line"></div>
             <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook.png"></a>
@@ -86,5 +168,4 @@
             <div>Composed by SUGA, Heize, EL CAPITXN</div>
         </footer>
     </body>
-    </div>
 </html>

@@ -27,18 +27,18 @@
                 
             }
             nav a{
-                color: #D9D4CF;
+                color: #ff9900;
                 text-decoration: none;
             }
             nav{
                 padding: 0px 0px;
-                color: #D9D4CF;
+                color: #ff9900;
             }    
             nav>ul{
                 padding-left: 22px;
             }
             .background{
-                background-image: url("images/background2.png");
+                background-color: #D9D4CF;
                 background-size:cover;
                 background-repeat: no-repeat;
                 bgproperties="fixed";
@@ -47,11 +47,39 @@
                 float: left;
                 width: 400px;
             }
+            #content>div:nth-child(1){
+                background-color: #ff9900;
+            }
+            #content>div:nth-child(2){
+                background-color: #D9D4CF;
+            }
+            #content>div:nth-child(3){
+                background-color: #ff9900;
+            }
+            #content>div:nth-child(4){
+                background-color: #D9D4CF;
+            }
+            .content_part{
+                float:left;
+                width: 400px;
+                margin: 5px;
+            }
+            #content section{
+                width: 1650px;
+                /* margin-left: 180px; */ /* 고정값 */
+                margin-left: auto; /* 가변값 */
+                margin-right: auto;
+                padding: 50px 0px; /* 상하 좌우 */
+            }
+            section dt{
+                padding-left: 30px;
+            }
             footer{
                 float: left;
-                color: #D9D4CF;
-                padding-top: 600px;
+                color: #ff9900;
+                padding-top: 50px;
                 padding-left: 60px;
+                padding-bottom: 100px;
             }
             footer img{
                 width: 27px;
@@ -66,13 +94,131 @@
                 <li><a href="layout4.html">Main</a></li>
                 <li><a href="layout4-profile.html">Profile</a></li>
                 <li><a href="layout4-album.html">Album</a></li>
-                <li><a href="layout4-photo.html">Photo</a></li>
+                <li><a href="layout4-photo.html">Media</a></li>
                 <div class="clear"></div> <!-- float left 해제 -->
             </ul>
             <div class="clear"></div> <!-- float left 해제 -->
         </nav>
         <div class="clear"></div>
-        <img src="" />
+        
+        <div id="content">
+            <div>
+                <section>
+                    <div class="content_part">
+                        <img src="images/heize_lip_1.png" onmouseover='this.src="images/heize_lip_2.png"' onmouseout='this.src="images/heize_lip_1.png"' width="400">
+                    </div>
+                    <div class="content_part">
+                            <img src="images/heize_lip_3.png" onmouseover='this.src="images/heize_lip_4.png"' onmouseout='this.src="images/heize_lip_3.png"' width="400">
+                    </div>
+                    <div class="content_part">
+                            <img src="images/heize_lip_5.png" onmouseover='this.src="images/heize_lip_6.png"' onmouseout='this.src="images/heize_lip_5.png"' width="400">
+                    </div>
+                    <div class="content_part">
+                            <img src="images/heize_lip_7.png" onmouseover='this.src="images/heize_lip_8.png"' onmouseout='this.src="images/heize_lip_7.png"' width="400">
+                    </div>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div class="content_part">
+                        <img src="images/heize_sunglass_1.png" onmouseover='this.src="images/heize_sunglass_2.png"' onmouseout='this.src="images/heize_sunglass_1.png"' width="400">
+                    </div>
+                    <div class="content_part">
+                            <img src="images/heize_cap_1.png" onmouseover='this.src="images/heize_cap_2.png"' onmouseout='this.src="images/heize_cap_1.png"' width="400">
+                    </div>
+                    <div class="content_part">
+                            <img src="images/heize_sunglass_3.png" onmouseover='this.src="images/heize_sunglass_4.png"' onmouseout='this.src="images/heize_sunglass_3.png"' width="400">
+                    </div>
+                    <div class="content_part">
+                            <img src="images/heize_cap_3.png" onmouseover='this.src="images/heize_cap_4.png"' onmouseout='this.src="images/heize_cap_3.png"' width="400">
+                    </div>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div class="content_part">
+                        <div>  
+                            <video width="400x" controls autoplay loop muted>
+                            <source src="./media/헤이즈 (Heize) - We don't talk together (Feat. 기리보이 (Giriboy)) (Prod. SUGA) MV.mp4" type="video/mp4"/>
+                        </div>  
+                        <dl>
+                            <dt><strong>We don't talk together (Feat. 기리보이 (Giriboy))</strong></dt>
+                            <dd>
+                                <br />
+                                i know <br /><br />
+                                우린 사랑해서 <br /><br />
+                                We don't talk together <br /><br />
+                                여전히 난 너인걸 <br /><br />
+                                Why don't you <br /><br />
+                                인정하기 싫은걸 <br /><br />
+                                Why don't you <br /><br />
+                                보낼 수가 없는걸 <br />
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="content_part">
+                        <div>  
+                            <video width="400x" controls autoplay loop muted>
+                            <source src="./media/헤이즈 (Heize) - Jenga (Feat. Gaeko) MV.mp4" type="video/mp4"/>
+                        </div>  
+                        <dl>
+                            <dt><strong>Jenga (Feat. Gaeko)</strong></dt>
+                            <dd>
+                                <br />
+                                I don't wanna play <br /><br />
+                                this game no more <br /><br />
+                                somebody help <br /><br />
+                                I don't wanna play <br /><br />
+                                this game no more <br /><br />
+                                somebody help
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="content_part">
+                        <div>  
+                            <video width="400x" controls autoplay loop muted>
+                            <source src="./media/헤이즈 (Heize) - Shut Up & Groove (Feat. DEAN) MV.mp4" type="video/mp4"/>
+                        </div>  
+                        <dl>
+                            <dt><strong>Shut Up & Groove (Feat. DEAN)</strong></dt>
+                            <dd>
+                                <br />
+                                Go 닥치고 그냥 Groove <br /><br />
+                                흘러 가는대로 넘어 넘어 넘어가 <br /><br />
+                                굳이 말안해도 돼 Go away <br /><br />
+                                전부 지루하고 듣기 거북해 너같아 <br /><br />
+                                <br />
+                                Shut up and 9roove (9~) <br /><br />
+                                Juss keep groovin' <br /><br />
+                                Uh-huh
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="content_part">
+                        <div>  
+                            <video width="400x" controls autoplay loop muted>
+                            <source src="./media/GroovyRoom - 'Sunday(feat.박재범,헤이즈)' M V.mp4" type="video/mp4"/>
+                        </div>  
+                        <dl>
+                            <dt><strong>Sunday (feat. 박재범, 헤이즈)</strong></dt>
+                            <dd>
+                                <br />
+                                sunday sunday <br /><br />
+                                너의 손을 잡고 걸을 때 <br /><br />
+                                sunday sunday <br /><br />
+                                시간이 멈췄으면 해 <br /><br />
+                                sunday sunday <br /><br />
+                                주말이 왔어도 너가 없음 <br /><br />
+                                뭐해 뭐해 
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </section>
+            </div>
+        </div>
 
         <footer>
             <div class="short_line"></div>
