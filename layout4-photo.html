@@ -7,6 +7,7 @@
             @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
 			body{
 				font-family: 'Source Serif Pro', cursive;
+                margin: 0px;
 			}
             .float_left{
                 float: left;
@@ -42,6 +43,9 @@
                 background-size:cover;
                 background-repeat: no-repeat;
                 bgproperties="fixed";
+            }
+            header{
+                padding-top: 100px;
             }
             header img{
                 float: left;
@@ -84,21 +88,84 @@
             footer img{
                 width: 27px;
             }
+            header2{
+                background-color: #ff9900;
+                color: white;
+                padding: 10px 2px;
+                position: fixed;
+                z-index:1;
+                left: 0; right: 0;
+                font-family: 'Source Serif Pro', cursive;
+            }
+            header2>h1{
+                margin: 5px;
+            }
+            header2>nav>li{
+                float: left;
+                font-family: 'Source Serif Pro', cursive;
+                list-style: none;
+                padding: 0px 10px;
+                color: white;
+            }
+            header2 ul{
+                margin: left;
+            }
+            header2 a{
+                color: white;
+                text-decoration: none;
+                padding-left: 40px;
+            }
+            nav2 li{
+                float: left;
+                list-style: none;
+                padding: 0px;                
+            }
+            nav2 a{
+                color: white;
+                text-decoration: none;
+                padding: 0px 40px;
+            }
+            footer2{
+                background-color: #ff9900;
+                float: left;
+                color: white;
+                padding-top: 30px;
+                padding-left: 100px;
+                padding-right: 1000px;
+                padding-bottom: 30px;
+            }
+            footer2 img{
+                width: 27px;
+            }
         </style>
     </head>
     <body class="background">
-        <header> <a href="21961111.html"><img src="images/logo.png" /></a> </header>
-        <nav class="float_left">
-            <ul class="float_left">
-                <li><a href="21961111.html">Index</a></li>
-                <li><a href="layout4.html">Main</a></li>
-                <li><a href="layout4-profile.html">Profile</a></li>
-                <li><a href="layout4-album.html">Album</a></li>
-                <li><a href="layout4-photo.html">Media</a></li>
+        <header2><h1 class="float_left" id="header_sryle"><a href="21961111.html">GAYOUNG</a></h1>
+            <nav2 class="float_right">
+                <ul>
+                    <li><a href="21961111.html">Index</a></li>
+                    <li><a href="layout1.html">Layout 1</a></li>
+                    <li><a href="layout2.html">Layout 2</a></li>
+                    <li><a href="layout3.html">Layout 3</a></li>
+                    <li><a href="layout4.html">My Layout</a></li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
                 <div class="clear"></div> <!-- float left 해제 -->
-            </ul>
-            <div class="clear"></div> <!-- float left 해제 -->
-        </nav>
+            </nav2>
+        </header2>
+        <header> <a href="21961111.html"><img src="images/logo.png" /></a>
+            <nav class="float_left">
+                <ul class="float_left">
+                    <li><a href="21961111.html">Index</a></li>
+                    <li><a href="layout4.html">Main</a></li>
+                    <li><a href="layout4-profile.html">Profile</a></li>
+                    <li><a href="layout4-album.html">Album</a></li>
+                    <li><a href="layout4-photo.html">Media</a></li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
+                <div class="clear"></div> <!-- float left 해제 -->
+            </nav>
+        </header>
         <div class="clear"></div>
         
         <div id="content">
@@ -221,14 +288,18 @@
         </div>
 
         <footer>
-            <div class="short_line"></div>
-            <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook.png"></a>
-            <a href="https://www.instagram.com/heize_official"><img src="images/instagram.png"></a>
-            <a href="https://twitter.com/heize_official"><img src="images/twitter.png"></a>
-            <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube.png"></a>
-            <div class="short_line"></div>
-            <div>Choi Ga Young - 21961111 Digital Media Design</div>
-            <div>Kaywon University of Art and Design</div>
-        </footer>
-    </body>
-</html>
+                <div class="short_line"></div>
+                <div class="short_line"></div>
+                <div>Lyrics by 헤이즈(Heize), SUGA, 기리보이 </div>
+                <div>Composed by SUGA, 헤이즈(Heize), EL CAPITXN</div>
+            </footer>
+            <footer2>
+                    <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook1.png"></a>
+                    <a href="https://www.instagram.com/heize_official"><img src="images/instagram1.png"></a>
+                    <a href="https://twitter.com/heize_official"><img src="images/twitter1.png"></a>
+                    <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube1.png"></a>
+                    <div>Choi Ga Young - 21961111 Digital Media Design, Kaywon University of Art and Design</div>
+                    <div>1st grade 2nd semester Content Programming, final examination</div>
+            </footer2>
+        </body>
+    </html>

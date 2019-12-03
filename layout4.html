@@ -6,7 +6,9 @@
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
 			body{
+                margin: 0px;
 				font-family: 'Source Serif Pro', cursive;
+                
 			}
             .float_left{
                 float: left;
@@ -27,21 +29,25 @@
                 
             }
             nav a{
-                color: #D9D4CF;
+                color: white;
                 text-decoration: none;
             }
             nav{
                 padding: 0px 0px;
-                color: #D9D4CF;
+                color: white;
             }    
             nav>ul{
                 padding-left: 22px;
             }
             .background{
                 background-image: url("images/background3.png");
-                background-size:cover;
+                background-color: #ff9900;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 bgproperties="fixed";
+            }
+            header{
+                padding: 80px 0px;
             }
             header img{
                 float: left;
@@ -49,16 +55,101 @@
             }
             footer{
                 float: left;
-                color: #D9D4CF;
-                padding-top: 600px;
+                color: white;
                 padding-left: 60px;
+                padding-bottom: 30px;
             }
             footer img{
                 width: 27px;
             }
+
+            header2{
+                background-color: #ff9900;
+                color: white;
+                padding: 10px 2px;
+                position: fixed;
+                z-index:1;
+                left: 0; right: 0;
+                font-family: 'Source Serif Pro', cursive;
+            }
+            header2>h1{
+                margin: 5px;
+            }
+            header2>nav>li{
+                float: left;
+                font-family: 'Source Serif Pro', cursive;
+                list-style: none;
+                padding: 0px 10px;
+                color: white;
+            }
+            header2 ul{
+                margin: left;
+            }
+            header2 a{
+                color: white;
+                text-decoration: none;
+                padding-left: 40px;
+            }
+            nav2 li{
+                float: left;
+                list-style: none;
+                padding: 0px;                
+            }
+            nav2 a{
+                color: white;
+                text-decoration: none;
+                padding: 0px 40px;
+            }
+            footer2{
+                background-color: #ff9900;
+                float: left;
+                color: white;
+                padding-top: 30px;
+                padding-left: 100px;
+                padding-right: 700px;
+                padding-bottom: 30px;
+            }
+            footer2 img{
+                width: 27px;
+            }
+            #main_visual{
+                background-size: 110% 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: white;
+                opacity: 0%;  
+                text-align: center;
+
+                padding-top: 300px; /* 상하 좌우 */
+                padding-bottom: 230px;
+            }
+            #main_visual h2{
+                font-size: 35px;
+                margin: 8px 0px; /* 상하 좌우 */
+            }
+            #main_visual img{
+                margin-top: 100px;
+                margin-bottom: 300px;
+            }
         </style>
     </head>
     <body class="background">
+        <header2><h1 class="float_left" id="header_sryle"><a href="21961111.html">GAYOUNG</a></h1>
+            <nav2 class="float_right">
+                <ul>
+                    <li><a href="21961111.html">Index</a></li>
+                    <li><a href="layout1.html">Layout 1</a></li>
+                    <li><a href="layout2.html">Layout 2</a></li>
+                    <li><a href="layout3.html">Layout 3</a></li>
+                    <li><a href="layout4.html">My Layout</a></li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
+                <div class="clear"></div> <!-- float left 해제 -->
+            </nav2>
+        </header2>
         <header> <a href="21961111.html"><img src="images/logo.png" /></a>
         <nav class="float_left">
             <ul class="float_left">
@@ -73,15 +164,25 @@
         </nav>
         </header>   
         <div class="clear"></div>
+
+        <div id="main_visual">
+            <div id="title_top"><br />It wasn't natural for you to be around me.</div>
+            <h2>We don't talk together</h2>
+        </div>
+
         <footer>
             <div class="short_line"></div>
-            <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook.png"></a>
-            <a href="https://www.instagram.com/heize_official"><img src="images/instagram.png"></a>
-            <a href="https://twitter.com/heize_official"><img src="images/twitter.png"></a>
-            <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube.png"></a>
             <div class="short_line"></div>
-            <div>Choi Ga Young - 21961111 Digital Media Design</div>
-            <div>Kaywon University of Art and Design</div>
+            <div>Lyrics by 헤이즈(Heize), SUGA, 기리보이 </div>
+            <div>Composed by SUGA, 헤이즈(Heize), EL CAPITXN</div>
         </footer>
+        <footer2>
+                <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook1.png"></a>
+                <a href="https://www.instagram.com/heize_official"><img src="images/instagram1.png"></a>
+                <a href="https://twitter.com/heize_official"><img src="images/twitter1.png"></a>
+                <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube1.png"></a>
+                <div>Choi Ga Young - 21961111 Digital Media Design, Kaywon University of Art and Design</div>
+                <div>1st grade 2nd semester Content Programming, final examination</div>
+        </footer2>
     </body>
 </html>

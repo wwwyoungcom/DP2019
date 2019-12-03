@@ -4,13 +4,13 @@
         <title>layout 3</title>
         <meta charset="uft-8" />
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
             /* CSS 작성하는 곳 */
             .nav li{
                 float: left;
                 list-style: none;
                 padding-left: 85px;
                 padding-right: 100px;
-                
             }
             .nav a{
                 color: #D9D4CF;
@@ -25,6 +25,7 @@
             }
             body{
                 background-image: url("images/Layout3_back.jpg");
+                margin: 0px; 10px;
             }
             .short_line{
                 border: solid 1px gray;
@@ -35,6 +36,9 @@
                 border: solid 1px gray;
                 width: 90px;
                 margin: 10px 0px; /* 상하 좌우 */
+            }
+            header{
+                padding-top: 70px;
             }
             header li{
                 float: left;
@@ -112,15 +116,16 @@
                 color: white;
                 padding: 10px 2px;
                 position: fixed;
+                z-index:1;
                 left: 0; right: 0;
                 font-family: 'Source Serif Pro', cursive;
-                font-size: 15px;
             }
             header2>h1{
                 margin: 5px;
             }
             header2>nav>li{
                 float: left;
+                font-family: 'Source Serif Pro', cursive;
                 list-style: none;
                 padding: 0px 10px;
                 color: white;
@@ -155,10 +160,17 @@
             footer2 img{
                 width: 27px;
             }
+            .float_left{
+                float:left;
+            }
+            .float_right{
+                float:right;
+            }
         </style>
     </head>
     <body>
-        <header2><h1 class="float_left" id="header_sryle"><a href="21961111.html">GAYOUNG</a></h1>
+        <header2>
+            <h1 class="float_left" id="header_style"><a href="21961111.html">GAYOUNG</a></h1>
             <nav2 class="float_right">
                 <ul>
                     <li><a href="21961111.html">Index</a></li>
@@ -171,7 +183,6 @@
                 <div class="clear"></div> <!-- float left 해제 -->
             </nav2>
         </header2> 
-        <div id="warp">
         <div class="clear"></div>
         <header>
             <h1>Gridly</h1>
@@ -460,12 +471,12 @@
         </footer>
 
         <footer2>
-            <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook.png"></a>
-            <a href="https://www.instagram.com/heize_official"><img src="images/instagram.png"></a>
-            <a href="https://twitter.com/heize_official"><img src="images/twitter.png"></a>
-            <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube.png"></a>
-            <div>Choi Ga Young - 21961111 Digital Media Design</div>
-            <div>Kaywon University of Art and Design</div>
+                <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook1.png"></a>
+                <a href="https://www.instagram.com/heize_official"><img src="images/instagram1.png"></a>
+                <a href="https://twitter.com/heize_official"><img src="images/twitter1.png"></a>
+                <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube1.png"></a>
+                <div>Choi Ga Young - 21961111 Digital Media Design, Kaywon University of Art and Design</div>
+                <div>1st grade 2nd semester Content Programming, final examination</div>
         </footer2>
     </body>
 </html>
