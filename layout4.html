@@ -56,8 +56,9 @@
             footer{
                 float: left;
                 color: white;
-                padding-left: 60px;
+                padding-left: 100px;
                 padding-bottom: 30px;
+                padding-top: 60px;
             }
             footer img{
                 width: 27px;
@@ -134,6 +135,133 @@
                 margin-top: 100px;
                 margin-bottom: 300px;
             }
+            section{
+                text-align: center;
+            }
+            section h3{
+                color: #f59300;
+                font-size: 20px;
+                font-weight: normal
+                margin: 50px 0px;
+            }
+            section h2{
+                color: #f59300;
+                font-size: 35px;
+                font-weight: normal
+                margin: 50px 0px;
+            }
+            section p{
+                margin: 50px 100px;
+            }
+            section dd{
+                margin: 0px;
+                padding-top: 10px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 200px; /* 고정값 */
+                width: calc(25% - (1px / 4 * 3) - 30px - 30px);
+
+                list-style: none;
+                padding: 30px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            section #about_list{
+                padding: 0px;
+                margin: 0px 50px;
+            }
+            .heize_profile1 img{
+                width: 290px;
+                height: 500px;
+            }
+            .heize_profile2 img{
+                width: 290px;
+                height: 500px;
+            }
+            .heize_profile3 img{
+                width: 290px;
+            }
+            .long_line{
+                border: solid 1px white;
+                width: 90px;
+                margin: 10px 0px; /* 상하 좌우 */
+            }
+            .visual{
+                position: relative; /* 관계형 */
+                /* 자식이 absolute일 경우 relative인 부모가 위치 설정의 기준이 됨 */
+            }
+            .visual img{
+                display: inline; /* 표시 방식 : 인라인형 */
+                display: block; /* 표시 방식 : 블록형 */
+                width: 310px;
+            }
+            #content ul{
+                padding: 0px
+            }
+            .card{
+                background-color: white;
+                width: 310px;
+                float: left;
+                list-style: none;
+                margin: 15px;
+            }
+            .info{
+                padding: 0px;
+                text-align: center;
+            }
+            .info dl{
+                margin: 0px;
+            }
+            .info dd{
+                margin: 0px;
+                padding-bottom: 30px;
+                padding-top: 3px;
+                font-size: 9px; /* 상속 */
+            }
+            .info dt{
+                padding-top: 20px;
+                font-weight: bold;
+            }
+            .card_margin{
+                margin: 0px 140px;
+            }
+            #content>div:nth-child(2){
+                background-color: #D9D4CF;
+            }
+            #content>div:nth-child(3){
+                background-color: #ff9900;
+            }
+            #content>div:nth-child(4){
+                background-color: #D9D4CF;
+            }
+            #content>div:nth-child(5){
+                background-color: #D9D4CF;
+            }
+            .content_part{
+                float:left;
+                width: 400px;
+                margin: 5px;
+            }
+            #content section{
+                width: 1650px;
+                /* margin-left: 180px; */ /* 고정값 */
+                margin-left: auto; /* 가변값 */
+                margin-right: auto;
+                padding: 50px 0px; /* 상하 좌우 */
+            }
+            section dt{
+                padding-left: 30px;
+            }
+            #content_margin{
+                margin-top: 100px;
+            }
+        </style>
+        <style type="text/css">
+            .space{
+             height:200px;
+            }
         </style>
     </head>
     <body class="background">
@@ -153,11 +281,10 @@
         <header> <a href="index.html"><img src="images/logo.png" /></a>
         <nav class="float_left">
             <ul class="float_left">
-                <li><a href="index.html">Index</a></li>
-                <li><a href="layout4.html">Main</a></li>
-                <li><a href="layout4-profile.html">Profile</a></li>
-                <li><a href="layout4-album.html">Album</a></li>
-                <li><a href="layout4-photo.html">Media</a></li>
+                <li>Main</li>
+                <li><a href="#target1">Profile</a></li>
+                <li><a href="#target2">Album</a></li>
+                <li><a href="#target3">Media</a></li>
                 <div class="clear"></div> <!-- float left 해제 -->
             </ul>
             <div class="clear"></div> <!-- float left 해제 -->
@@ -169,6 +296,481 @@
             <div id="title_top"><br />It wasn't natural for you to be around me.</div>
             <h2>We don't talk together</h2>
         </div>
+
+        <div style="background-color:#f4f1ee; margin-top: 300px; margin-left: 80px; margin-right: 80px; margin-bottom: 300px; padding:20px; opacity: 100%;">
+            <section>
+                <h2 id="target1">Heize's Profile</h2>
+                <div class="space"></div>
+                <ul id="about_list">
+                    <li class=heize_profile1>
+                        <image src="images/heize_profile1.jpg" />
+                    </li>
+                    <li class=heize_profile3>
+                        <image src="images/profile.png" />
+                        <dl>
+                            <dd>
+                                <br />
+                                <b>이름</b> 헤이즈 (Heize) <br /><br />
+                                <b>본명</b> 장다혜 (張多蕙) <br /><br />
+                                <b>출생</b> 1991년 8월 9일 (28세) 대구광역시 <br /><br />
+                                <b>신체</b> 166cm, O형 <br /><br />
+                                <b>가족</b> 부모님, 오빠, 반려견 밤비 <br /><br />
+                                <b>취미</b> 겨울왕국 '올라프' 모으기 <br /><br />
+                                <b>데뷔</b> 2014년 싱글 앨범 '조금만 더 방황하고' <br /><br />
+                                <b>소속</b> Studio Blu
+                            </dd>
+                        </dl> 
+                    </li>
+                    <li class=heize_profile3>
+                        <image src="images/awards.png" />
+                        <h3>2018년</h3>
+                        <dl>
+                            <dd>
+                                제 7회 가온차트 뮤직 어워드 <br /> 올해의 발견상 R&B 부문 <br /><br />
+                                제 13회 숨피어워즈 <br /> 베스트 힙합 알엔비 아티스트 <br /><br />
+                                엠넷 아시안 뮤직 어워드 <br /> 베스트 보컬 퍼포먼스 솔로 <br /><br />
+                            </dd>
+                        </dl> 
+                        <h3>2019년</h3>
+                        <dl>
+                            <dd>
+                                제 14회 멜론 뮤직 어워드 <br /> TOP 10 & 뮤직스타일상 R&B/Soul 부문 <br /><br />
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class=heize_profile2>
+                        <image src="images/heize_profile2.jpg" /> 
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>
+                <ul id="about_list">
+                    <li class=heize_profile1>
+                    </li>
+                    <li class=heize_profile3>
+                        <image src="images/Broadcast.png" />
+                        <h3>2017년</h3>
+                        <dl>
+                            <dd>
+                                유희열의 스케치북(KBS2) <em>(2016.01.07)</em><br />
+                                수요미식회(tvN) <em>(2017.02.01)</em><br />
+                                유희열의 스케치북(KBS2) <em>(2017.05.06)</em><br />
+                                I'm Live(아리랑TV) <em>(2017.06.23)</em><br />
+                                두시탈출 컬투쇼 <em>(2017.07.06)</em><br />
+                                이홍기의 키스 더 라디오(KBS 쿨FM) <em>(2017.07.07)</em><br />
+                                테이의 꿈꾸는 라디오(MBC FM4U) <em>(2017.07.12)</em><br />
+                                박진영의 파티피플(SBS) <em>(2017.07.29)</em><br />
+                                2017 SBS 가요대전(SBS) <em>(2017.12.25)</em><br />
+                            </dd>
+                        </dl> 
+                        <h3>2018년</h3>
+                        <dl>
+                            <dd>
+                                헤이즈 컴백쇼 - 바람(Mnet) <em>(2018.03.08)</em><br />
+                                Wanna One GO : X-CON(Mnet)</b><br />
+                                한끼줍쇼(JTBC) <em>(2018.06.06)</em><br />
+                            </dd>
+                        </dl>
+                        <h3>2019년</h3>
+                        <dl>
+                            <dd>
+                                니가 알던 내가 아냐 V2(Mnet) (2019.07.11)</em><br />
+                                놀면 뭐하니?(MBC) <em>(2019.09.07,28)</em><br />
+                                투유 프로젝트 - 슈가맨 3(JTBC) <em>(2019.11.29)</em><br />
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class=heize_profile3>
+                        <image src="images/advertisement.png" />
+                        <h3>2016년</h3>
+                        <dl>
+                            <dd>
+                                <b>NIX 16SS 광고 모델</b> (with 서강준)<br />
+                                <b>넥스트무브 아케론</b>)<br />
+                                <b>비너스 솔브</b><br />
+                                <b>SC제일은행</b> (with 박상영)<br />
+                            </dd>
+                        </dl> 
+                        <h3>2017년</h3>
+                        <dl>
+                            <dd>
+                                <b>스타일 난다 3CE</b><br />
+                                <b>NBA 2017 S/S 한·중 모델</b> (with 박재범)<br />
+                                <b>NBA 2017 F/W 한·중 모델</b> (with 박재범)<br />
+                            </dd>
+                        </dl> 
+                        <h3>2018년</h3>
+                        <dl>
+                            <dd>
+                                <b>MAC 15 Shades of Heize</b> (헤이즈 키트)<br />
+                                <b>삼성전자 삼성 노트북 Pen CF</b><br />
+                                <b>코오롱스포츠 4th 노아프로젝트 멸종 위기 해마 보호 캠페인</b><br />
+                                <b>팬텀게이트</b> OST '별의 눈동자' 발매<br />
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            </div>
+            
+            <div>
+            <div class="card_margin">
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album16.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt id="target2">만추</dt>
+                        <dd>
+                            <div>The 5th Mini Album / 2019.10.13</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album15.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>We don't talk together</dt>
+                        <dd>
+                            <div>The 8th Single / 2019. 07. 07</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album14.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>She's Fine</dt>
+                        <dd>
+                            <div>The 1st album / 2019.03.19</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album13.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>오롯이</dt>
+                        <dd>
+                            <div>The 7th Single / 2019. 02. 14</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album12.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>첫눈에</dt>
+                        <dd>
+                            <div>The 6th Single / 2018. 12. 14</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album11.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>바람</dt>
+                        <dd>
+                            <div>The 4th Mini Album / 2018. 03. 08</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album10.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>너와 함께한 시간 속에서</dt>
+                        <dd>
+                            <div>Remake Album / 2017. 08. 25</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album9.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>/// (너 먹구름 비)</dt>
+                        <dd>
+                            <div>The 3rd Mini Album / 2017. 06. 26</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album8.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>저 별</dt>
+                        <dd>
+                            <div>The 5th Single / 2016. 12. 05</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album7.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>And July</dt>
+                        <dd>
+                            <div>The 2nd Mini Album / 2016. 07. 18</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+    
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album6.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>돌아오지마</dt>
+                        <dd>
+                            <div>The 4th Single / 2016. 04. 14</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album5.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>썸타 (Lil' Something)</dt>
+                        <dd>
+                            <div>SM STATION / 2016.04.08</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+    
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album4.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>Pume Sweet Pume</dt>
+                        <dd>
+                            <div>The 3rd Single / 2015. 06. 05</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+    
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album3.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>HEIZE</dt>
+                        <dd>
+                            <div>The 1st Mini Album / 2014. 03. 21</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+    
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album2.jpeg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>내 남자친구가 고맙대</dt>
+                        <dd>
+                            <div>The 2nd Single / 2015.01.16</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+    
+            <li class="card">
+                <div class="visual">
+                    <img src="images/album1.jpg" />
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>조금만 더 방황하고</dt>
+                        <dd>
+                            <div>The 1st Single / 2014. 03. 21</div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            </div>
+            </div>
+
+            <div id="content">
+                <div>
+                    <section id="content_margin">
+
+                    </section>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+                <div>
+                    <section id="target3">
+                        <div class="content_part">
+                            <img src="images/heize_lip_1.png" onmouseover='this.src="images/heize_lip_2.png"' onmouseout='this.src="images/heize_lip_1.png"' width="400">
+                        </div>
+                        <div class="content_part">
+                                <img src="images/heize_lip_3.png" onmouseover='this.src="images/heize_lip_4.png"' onmouseout='this.src="images/heize_lip_3.png"' width="400">
+                        </div>
+                        <div class="content_part">
+                                <img src="images/heize_lip_5.png" onmouseover='this.src="images/heize_lip_6.png"' onmouseout='this.src="images/heize_lip_5.png"' width="400">
+                        </div>
+                        <div class="content_part">
+                                <img src="images/heize_lip_7.png" onmouseover='this.src="images/heize_lip_8.png"' onmouseout='this.src="images/heize_lip_7.png"' width="400">
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <div class="content_part">
+                            <img src="images/heize_sunglass_1.png" onmouseover='this.src="images/heize_sunglass_2.png"' onmouseout='this.src="images/heize_sunglass_1.png"' width="400">
+                        </div>
+                        <div class="content_part">
+                                <img src="images/heize_cap_1.png" onmouseover='this.src="images/heize_cap_2.png"' onmouseout='this.src="images/heize_cap_1.png"' width="400">
+                        </div>
+                        <div class="content_part">
+                                <img src="images/heize_sunglass_3.png" onmouseover='this.src="images/heize_sunglass_4.png"' onmouseout='this.src="images/heize_sunglass_3.png"' width="400">
+                        </div>
+                        <div class="content_part">
+                                <img src="images/heize_cap_3.png" onmouseover='this.src="images/heize_cap_4.png"' onmouseout='this.src="images/heize_cap_3.png"' width="400">
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <div class="content_part">
+                            <div>  
+                                <video width="400x" controls autoplay loop muted>
+                                <source src="./media/헤이즈 (Heize) - We don't talk together (Feat. 기리보이 (Giriboy)) (Prod. SUGA) MV.mp4" type="video/mp4"/>
+                            </div>  
+                            <dl>
+                                <dt><strong>We don't talk together (Feat. 기리보이 (Giriboy))</strong></dt>
+                                <dd>
+                                    <br />
+                                    i know <br /><br />
+                                    우린 사랑해서 <br /><br />
+                                    We don't talk together <br /><br />
+                                    여전히 난 너인걸 <br /><br />
+                                    Why don't you <br /><br />
+                                    인정하기 싫은걸 <br /><br />
+                                    Why don't you <br /><br />
+                                    보낼 수가 없는걸 <br />
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <div>  
+                                <video width="400x" controls autoplay loop muted>
+                                <source src="./media/헤이즈 (Heize) - Jenga (Feat. Gaeko) MV.mp4" type="video/mp4"/>
+                            </div>  
+                            <dl>
+                                <dt><strong>Jenga (Feat. Gaeko)</strong></dt>
+                                <dd>
+                                    <br />
+                                    I don't wanna play <br /><br />
+                                    this game no more <br /><br />
+                                    somebody help <br /><br />
+                                    I don't wanna play <br /><br />
+                                    this game no more <br /><br />
+                                    somebody help
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <div>  
+                                <video width="400x" controls autoplay loop muted>
+                                <source src="./media/헤이즈 (Heize) - Shut Up & Groove (Feat. DEAN) MV.mp4" type="video/mp4"/>
+                            </div>  
+                            <dl>
+                                <dt><strong>Shut Up & Groove (Feat. DEAN)</strong></dt>
+                                <dd>
+                                    <br />
+                                    Go 닥치고 그냥 Groove <br /><br />
+                                    흘러 가는대로 넘어 넘어 넘어가 <br /><br />
+                                    굳이 말안해도 돼 Go away <br /><br />
+                                    전부 지루하고 듣기 거북해 너같아 <br /><br />
+                                    <br />
+                                    Shut up and 9roove (9~) <br /><br />
+                                    Juss keep groovin' <br /><br />
+                                    Uh-huh
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <div>  
+                                <video width="400x" controls autoplay loop muted>
+                                <source src="./media/GroovyRoom - 'Sunday(feat.박재범,헤이즈)' M V.mp4" type="video/mp4"/>
+                            </div>  
+                            <dl>
+                                <dt><strong>Sunday (feat. 박재범, 헤이즈)</strong></dt>
+                                <dd>
+                                    <br />
+                                    sunday sunday <br /><br />
+                                    너의 손을 잡고 걸을 때 <br /><br />
+                                    sunday sunday <br /><br />
+                                    시간이 멈췄으면 해 <br /><br />
+                                    sunday sunday <br /><br />
+                                    주말이 왔어도 너가 없음 <br /><br />
+                                    뭐해 뭐해 
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div> <!-- float left 해제 -->
+                    </section>
+                    <a style="display:scroll;position:fixed;bottom:10px;right:10px;" href="#" title=”맨위로><img src="images/up-arrow.png" width="50px" height="50px"></a>
+                </div>
+            </div>
+            
+        
 
         <footer>
             <div class="short_line"></div>
