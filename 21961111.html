@@ -7,6 +7,7 @@
             @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
 			body{
 				font-family: 'Source Serif Pro', cursive;
+                margin: 0px;
 			}
             .float_left{
                 float: left;
@@ -19,48 +20,86 @@
                 height: 0px; /* 높이 : 0px */
                 overflow: hidden; /* 넘쳤을 때 : 숨김 */
             }
-            nav2 li{
-                float: left;
-                list-style: none;
-                padding-left: 85px;
-                padding-right: 100px;                
-            }
-            nav2 a{
-                color: #D9D4CF;
-                text-decoration: none;
-            }
-            nav2{
-                padding: 0px 0px;
-                color: #D9D4CF;
-            }    
-            nav2>ul{
-                padding-left: 22px;
-            }
             .background{
-                background-image: url("images/background.png");
+                background-color: #ff9900;
                 background-size:cover;
                 background-repeat: no-repeat;
                 bgproperties="fixed";
             }
-            header2 img{
-                float: left;
-                width: 400px;
+            header{
+                background-color: #ff9900;
+                color: white;
+                padding: 10px 2px;
+                position: fixed;
+                left: 0; right: 0;
             }
-            footer2{
-                float: left;
-                color: #D9D4CF;
-                padding-top: 600px;
-                padding-left: 60px;
+            header>h1{
+                margin: 5px;
             }
-            footer2 img{
+            header>nav>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+                color: white;
+            }
+            header ul{
+                margin: left;
+            }
+            header a{
+                color: white;
+                text-decoration: none;
+                padding-left: 40px;
+            }
+            nav li{
+                float: left;
+                list-style: none;
+                padding: 0px;                
+            }
+            nav a{
+                color: white;
+                text-decoration: none;
+                padding: 0px 40px;
+            }
+            footer{
+                background-color: #ff9900;
+                float: left;
+                color: white;
+                padding-top: 30px;
+                padding-left: 100px;
+                padding-right: 800px;
+                padding-bottom: 30px;
+            }
+            footer img{
                 width: 27px;
+            }
+            #main_visual{
+                background-image: url("images/background.png");
+                background-size: 100% auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: black;
+                background-position: 50% 50%; /* 가로 세로 */
+
+                color: white; /* 상속 */
+                text-align: center;
+
+                padding-top: 120px; /* 상하 좌우 */
+            }
+            #main_visual h2{
+                font-size: 35px;
+                margin: 8px 0px; /* 상하 좌우 */
+            }
+            #main_visual img{
+                margin-top: 100px;
+                margin-bottom: 300px;
             }
         </style>
     </head>
     <body class="background">
-        <header2> <a href="21961111.html"><img src="images/logo.png" /></a> </header2>
-        <nav2 class="float_left">
-            <ul class="float_left">
+        <header><h1 class="float_left" id="header_sryle"><a href="21961111.html">GAYOUNG</a></h1>
+        <nav class="float_right">
+            <ul>
                 <li><a href="21961111.html">Index</a></li>
                 <li><a href="layout1.html">Layout 1</a></li>
                 <li><a href="layout2.html">Layout 2</a></li>
@@ -69,19 +108,23 @@
                 <div class="clear"></div> <!-- float left 해제 -->
             </ul>
             <div class="clear"></div> <!-- float left 해제 -->
-        </nav2>
+        </nav>
+        </header>  
         <div class="clear"></div>
-        <img src="" />
 
-        <footer2>
-            <div class="short_line"></div>
-            <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook.png"></a>
-            <a href="https://www.instagram.com/heize_official"><img src="images/instagram.png"></a>
-            <a href="https://twitter.com/heize_official"><img src="images/twitter.png"></a>
-            <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube.png"></a>
-            <div class="short_line"></div>
-            <div>Choi Ga Young - 21961111 Digital Media Design</div>
-            <div>Kaywon University of Art and Design</div>
-        </footer2>
+        <div id="main_visual">
+            <div id="title_top"><br />It wasn't natural for you to be around me.</div>
+            <h2>We don't talk together</h2>
+            <img src="images/logo4.png" width="400px" />
+        </div>
+
+        <footer>
+                <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook1.png"></a>
+                <a href="https://www.instagram.com/heize_official"><img src="images/instagram1.png"></a>
+                <a href="https://twitter.com/heize_official"><img src="images/twitter1.png"></a>
+                <a href="https://www.youtube.com/channel/UCsXigGjbC_l4ttk-oahTfVg"><img src="images/youtube1.png"></a>
+                <div>Choi Ga Young - 21961111 Digital Media Design, Kaywon University of Art and Design</div>
+                <div>1st grade 2nd semester Content Programming, final examination</div>
+        </footer>
     </body>
 </html>

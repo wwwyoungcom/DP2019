@@ -5,22 +5,22 @@
         <meta charset="uft-8" />
         <style>
             /* CSS 작성하는 곳 */
-            .nav1 li{
+            .nav li{
                 float: left;
                 list-style: none;
                 padding-left: 85px;
                 padding-right: 100px;
                 
             }
-            .nav1 a{
+            .nav a{
                 color: #D9D4CF;
                 text-decoration: none;
             }
-            .nav1{
+            .nav{
                 padding: 0px 0px;
                 color: #D9D4CF;
             }    
-            .nav1>ul{
+            .nav>ul{
                 padding-left: 22px;
             }
             body{
@@ -95,47 +95,62 @@
             .info dt{
                 font-weight: bold;
             }
-            .footer1{
+            .footer{
                 float: left;
                 color: #D9D4CF;
                 padding-top: 40px;
                 padding-left: 90px;
                 padding-bottom: 60px;
             }
-            .footer1 img{
+            .footer img{
                 width: 27px;
                 height: 27px;
             }
 
+            header2{
+                background-color: #ff9900;
+                color: white;
+                padding: 10px 2px;
+                position: fixed;
+                left: 0; right: 0;
+                font-family: 'Source Serif Pro', cursive;
+                font-size: 15px;
+            }
+            header2>h1{
+                margin: 5px;
+            }
+            header2>nav>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+                color: white;
+            }
+            header2 ul{
+                margin: left;
+            }
+            header2 a{
+                color: white;
+                text-decoration: none;
+                padding-left: 40px;
+            }
             nav2 li{
                 float: left;
                 list-style: none;
-                padding-left: 85px;
-                padding-right: 100px;
-                
+                padding: 0px;                
             }
             nav2 a{
-                color: black;
+                color: white;
                 text-decoration: none;
-            }
-            nav2{
-                padding-top: 30px;
-                color: black;
-            }    
-            nav2>ul{
-                padding-top: 20px;
-                padding-left: 22px;
-            }
-            header2 img{
-                float: left;
-                width: 400px;
+                padding: 0px 40px;
             }
             footer2{
+                background-color: #ff9900;
                 float: left;
-                color: black;
-                padding-top: 60px;
-                padding-left: 60px;
-                padding-bottom: 40px;
+                color: white;
+                padding-top: 30px;
+                padding-left: 100px;
+                padding-right: 1000px;
+                padding-bottom: 30px;
             }
             footer2 img{
                 width: 27px;
@@ -143,19 +158,20 @@
         </style>
     </head>
     <body>
-        <div id="warp">
-        <header2> <a href="21961111.html"><img src="images/logo.png" /></a> </header2>
-        <nav2 class="float_left">
-            <ul class="float_left">
-                <li><a href="21961111.html">Index</a></li>
-                <li><a href="layout1.html">Layout 1</a></li>
-                <li><a href="layout2.html">Layout 2</a></li>
-                <li><a href="layout3.html">Layout 3</a></li>
-                <li><a href="layout4.html">My Layout</a></li>
+        <header2><h1 class="float_left" id="header_sryle"><a href="21961111.html">GAYOUNG</a></h1>
+            <nav2 class="float_right">
+                <ul>
+                    <li><a href="21961111.html">Index</a></li>
+                    <li><a href="layout1.html">Layout 1</a></li>
+                    <li><a href="layout2.html">Layout 2</a></li>
+                    <li><a href="layout3.html">Layout 3</a></li>
+                    <li><a href="layout4.html">My Layout</a></li>
+                    <div class="clear"></div> <!-- float left 해제 -->
+                </ul>
                 <div class="clear"></div> <!-- float left 해제 -->
-            </ul>
-            <div class="clear"></div> <!-- float left 해제 -->
-        </nav2>
+            </nav2>
+        </header2> 
+        <div id="warp">
         <div class="clear"></div>
         <header>
             <h1>Gridly</h1>
@@ -432,7 +448,7 @@
         </ul>
         </div>
     </div>
-        <footer1>
+        <footer>
             <div class="short_line"></div>
             <img src="images/layout3_icon1.png" />
             <img src="images/layout3_icon2.png" />
@@ -441,7 +457,7 @@
             <div class="short_line"></div>
             <div>This website & the Internet Ends here→</div>
             <div>Copyright 2011 Showcase Design www.BiazRobar.com</div>
-        </footer1>
+        </footer>
 
         <footer2>
             <a href="https://www.facebook.com/HeizeOfficial"><img src="images/facebook.png"></a>
